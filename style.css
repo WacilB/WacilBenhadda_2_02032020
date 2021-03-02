@@ -1,0 +1,32 @@
+/* New font : Raleway */
+@font-face{
+    font-family: "Raleway";
+    src: url(fonts/Raleway/Raleway-VariableFont_wght.ttf)
+}
+body{
+    font-family:"Raleway" , Arial, Helvetica, sans-serif;
+    margin: 50px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header img{
+    /*margin-left: 50px;*/
+}
+
+nav{
+    margin-right: 10px;
+}
+nav ul{ 
+    list-style: none;
+    display: flex;
+    
+}
+
+nav li {
+    margin: 50px;
+    color: #0065FC;
+}
