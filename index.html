@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
+
     <script src="https://kit.fontawesome.com/841d80972e.js" crossorigin="anonymous"></script>
     <title>Réservia</title>
 </head>
+
 <body>
     <header>
         <img src="images/logo/Reservia.svg" alt="" srcset="">
         <nav>
-           <ul>
-              <a href="#"><li>Hébergments</li></a> 
-              <a href="#"><li>Activités</li></a>
-              <a href="#"><li>S'inscrire</li></a>
-           </ul>
+            <ul>
+                <a href="#">
+                    <li>Hébergments</li>
+                </a>
+                <a href="#">
+                    <li>Activités</li>
+                </a>
+                <a href="#">
+                    <li>S'inscrire</li>
+                </a>
+            </ul>
         </nav>
     </header>
     <section class="filtre">
@@ -26,14 +34,43 @@
             <form action="#" method="get" id="FormSearchBar">
                 <div class="InputContainer">
                     <i class="fas fa-map-marker-alt Icon"></i>
-                <input type="text" class="InputField" placeholder="Marseille, France">
+                    <input type="text" class="InputField" placeholder="Marseille, France">
                 </div>
                 <button type="submit" class="InputBtn">Rechercher</button>
             </form>
         </div>
-        <div class="BlockFilter">
-            
+    </section>
+    <section class="BlockFilter">
+        <p>Filtres</p>
+        <div class="BlockBtnFilter">
+            <div class="BtnDivIcon"> 
+                <i class="fas fa-money-bill-wave IconBtnFilter"></i>
+            </div>
+            <button class="BtnFilter">
+                <p class="TxtFilter">Économique</p>
+            </button>
+            <div class="BtnDivIcon"> 
+                <i class="fas fa-child IconBtnFilter child"></i>
+            </div>
+            <button class="BtnFilter">
+                <p class="TxtFilter">Famillial</p>
+            </button>
+            <div class="BtnDivIcon"> 
+                
+                <i class="fas fa-heart IconBtnFilter"></i>
+            </div>
+            <button class="BtnFilter">
+                <p class="TxtFilter">Romantique</p>
+            </button>
+            <div class="BtnDivIcon">
+                <i class="fas fa-dog IconBtnFilter"></i>
+            </div>
+            <button type="button" class="BtnFilter">
+                <p class="TxtFilter">Animaux autorisés</p>
+            </button>
+
         </div>
     </section>
 </body>
+
 </html>

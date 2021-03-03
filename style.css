@@ -4,9 +4,7 @@
     src: url(fonts/Raleway/Raleway-VariableFont_wght.ttf)
 }
 
-*{
-    box-sizing: border-box;
-}
+
 
 body{
     font-family:"Raleway" , Arial, Helvetica, sans-serif;
@@ -66,4 +64,65 @@ nav li {
 
 #FormSearchBar{
     display: flex;
+}
+.SearchBar{
+    margin-bottom: 20px;
+}
+
+
+
+.BlockFilter{
+    display: flex;
+    
+}
+.BlockBtnFilter{
+    align-self: center;
+    margin-left: 2vw;
+    display: flex;
+
+
+}
+
+.BtnFilter{
+    display: flex;
+    background-color: white;
+    border: 2px #F2F2F2 solid ;
+    border-radius: 30px;
+    justify-content: center;
+    margin:0 30px 0 10px ;
+    
+}
+.BtnFilter:active{
+    background-color: aquamarine;
+}
+.IconBtnFilter{
+    position: absolute;
+    align-self: center;
+    padding: 10px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border: solid 1px #DEEBFF;
+    border-radius: 100%;
+    font-size: 23px;
+    
+}
+.child
+{
+    font-size: 25px;
+}
+.BtnDivIcon{
+   
+    padding-top: 2px;
+}
+
+.TxtFilter{
+    /*border-bottom: 5px solid #F2F2F2;
+    border-right: 1px solid #F2F2F2;
+    border-top: 1px solid #F2F2F2;
+    border-radius: 0 100% 100% 0;
+    border: 3px solid black;
+    height: 5vh;*/
+    padding-left: 4vw;
+    padding-right: 1vw;
+    font-weight: bold;
 }
