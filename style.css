@@ -1,13 +1,15 @@
 /* New font : Raleway */
 @font-face{
-    font-family: "Raleway";
+    font-family: "Raleway, bold";
     src: url(fonts/Raleway/Raleway-VariableFont_wght.ttf)
 }
 
 
+*{
 
-body{
     font-family:"Raleway" , Arial, Helvetica, sans-serif;
+}
+body{
     margin: 50px;
 }
 
@@ -125,4 +127,129 @@ nav li {
     padding-left: 4vw;
     padding-right: 1vw;
     font-weight: bold;
+}
+
+.Hebergement{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.HebergementsMarseille{
+    background-color: #F2F2F2;
+    padding: 30px 60px 30px 60px;
+    border-radius: 15px;
+    
+}
+.HebergementsMarseille h3 {
+    
+    font-size: 22px;
+}
+.HebergementsGrid{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 880px;
+    justify-content: space-between;
+    
+}
+.HebergementsBlock{
+    width: 250px;
+    height: 190px;
+    background-color: white;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin-bottom: 56px;
+}
+
+.HebergementsBlock img {
+    width: 240px;
+    margin: 0px;
+    height: 115px;
+    align-self: center;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.HebergementsBlock h4{
+    margin: 5px 5px;
+    font-weight: bold;
+}
+.HebergementsBlock p{
+    margin: 3px 5px;
+}
+
+.BlockStars{
+    margin: 0px 5px;
+}
+.BlockStars .fa-star{
+    color: #0065FC;
+    font-size: 12px;
+}
+.quatreEtoiles .Stars5{
+    color: #F2F2F2;
+}
+.troisEtoiles .Stars4 {
+    color: #F2F2F2;
+}
+.More{
+    margin: 0;
+    font-weight: bold;
+}
+
+.Populaire{
+    background-color: #F2F2F2;
+    width: 415px;
+    border-radius: 15px;
+    padding: 30px;
+}
+.PopulaireTitre{
+    display: flex;
+    justify-content: space-between;
+}
+.PopulaireTitre h3{
+    font-size: 22px;
+}
+.Chart{
+    align-self: center;
+    font-size: 22px;
+}
+
+.PopulaireGrid{
+    display: flex;
+    flex-direction: column;
+}
+.PopulaireBlock{
+    width:340px;
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    border-radius: 15px;
+    margin-bottom: 45px;
+}
+.PopulaireBlock img{
+    width: 130px;
+    height: 135px;
+    margin: 0;
+    min-width: 130px;
+    justify-content: center;
+    border-radius: 15px 0 0 15px;
+    object-fit: cover;
+}
+.PopulaireBlockDescription{
+    margin: 5px 25px 5px 15px;
+    flex-wrap: wrap;
+}
+.PopulaireBlock h4{
+    margin: 0;
+    font-weight: bold;
+}
+.Last{
+    margin-bottom: 0;
+}
+.PopulaireBlockDescription p {
+   margin: 0;
+    margin-top: 5px;
+}
+.BlockStarsAside{
+    margin: 50px 25px 0 0;
 }
