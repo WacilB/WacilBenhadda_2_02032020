@@ -10,10 +10,11 @@
     font-family:"Raleway" , Arial, Helvetica, sans-serif;
 }
 body{
-    margin: 50px;
+    margin: 0px;
 }
 
 header{
+    margin: 0 50px;
     display: flex;
     justify-content: space-between;
 }
@@ -36,7 +37,9 @@ nav li {
     margin: 50px;
     color: #0065FC;
 }
-
+.filtre{
+    margin: 0 50px;
+}
 .InputContainer {
     display: flex;
 }
@@ -75,6 +78,7 @@ nav li {
 
 .BlockFilter{
     display: flex;
+    margin : 0 50px;
     
 }
 .BlockBtnFilter{
@@ -131,7 +135,7 @@ nav li {
 
 .Hebergement{
     display: flex;
-    margin-top: 50px;
+    margin: 50px 50px;
     justify-content: space-between;
 }
 .HebergementsMarseille{
@@ -253,3 +257,70 @@ nav li {
 .BlockStarsAside{
     margin: 50px 25px 0 0;
 }
+.Activites{
+    margin: 50px 50px;
+}
+.ActivitesGrid{
+    display: flex;
+    justify-content: space-between;
+}
+.ActivitesBlock{
+    border-radius: 20px;
+    border: solid 3px #F2F2F2;
+    
+}
+.ActivitesBlock h4{
+    margin-left: 15px;
+    font-weight: 600;
+}
+.ActivitesColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Port img{
+    width: 300px;
+    height: 390px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+.Parc img{
+    width: 300px;
+    height: 390px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+.Fort img{
+    width: 300px;
+    height: 175px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+.Ile img{
+    width: 300px;
+    height: 100px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+.Dame img{
+    width: 300px;
+    height: 140px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+.ParcL img{
+    width: 300px;
+    height: 155px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+}
+
+footer{
+  
+    background-color: #F2F2F2;
+    display: flex;
+    padding:45px ;
+    justify-content: space-around;
+    
+}
+
