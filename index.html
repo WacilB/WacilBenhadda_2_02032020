@@ -12,74 +12,102 @@
 
 <body>
     <header>
-        <img src="images/logo/Reservia.svg" alt="" srcset="">
+
+        <!-- Menu de navigation -->
         <nav>
+            <img src="images/logo/Reservia.svg">
             <ul>
-                <a href="#">
-                    <li>Hébergments</li>
-                </a>
-                <a href="#">
-                    <li>Activités</li>
-                </a>
+                <div class="menu__container">
+                    <a href="#Hebergement">
+                        <li>Hébergements</li>
+                    </a>
+                    <a href="#Activites">
+                        <li>Activités</li>
+                    </a>
+                </div>
                 <a href="#">
                     <li>S'inscrire</li>
                 </a>
             </ul>
+        <!--Menu version mobile-->
+            <div class="menu__mobile__container">
+                <a href="#Hebergement">
+                    <li>Hébergements</li>
+                </a>
+                <a href="#Activites">
+                    <li>Activités</li>
+                </a>
+            </div>
         </nav>
     </header>
-    <section class="filtre">
+
+    <!-- Barre de Recherche -->
+    <section class="barreRecherche">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
-        <div class="SearchBar">
-            <form action="#" method="get" id="FormSearchBar">
-                <div class="InputContainer">
-                    <i class="fas fa-map-marker-alt Icon"></i>
-                    <input type="text" class="InputField" placeholder="Marseille, France">
+        <div class="barreRecherche__container">
+            <form action="#" method="get" id="barreRecherche__formulaire">
+                <div class="barreRecherche__formulaire__container">
+                    <i class="fas fa-map-marker-alt barreRecherche__formulaire__icon "></i>
+                    <input type="text" class="barreRecherche__formulaire__input" placeholder="Marseille, France">
                 </div>
-                <button type="submit" class="InputBtn">Rechercher</button>
+                <button type="submit" class="barreRecherche__formulaire__boutton">
+                    <p>Rechercher</p>
+                    <i class="fas fa-search barreRecherche__formulaire__search"></i>
+                </button>
             </form>
         </div>
     </section>
-    <section class="BlockFilter">
+
+    <!-- Boutons pour filtrer les différentes catégories de logements  -->
+    <section class="filtre">
         <p>Filtres</p>
-        <div class="BlockBtnFilter">
-            <div class="BtnDivIcon">
-                <i class="fas fa-money-bill-wave IconBtnFilter"></i>
-            </div>
-            <button class="BtnFilter">
-                <p class="TxtFilter">Économique</p>
+        <div class="filtre__container__bouttons">
+            <button class="filtre__bouttons">
+                <div class="filtre__bouttons__container__icon">
+                    <i class="fas fa-money-bill-wave filtre__bouttons__icon"></i>
+                </div>
+                <p class="filtre__bouttons__texte">Économique</p>
             </button>
-            <div class="BtnDivIcon">
-                <i class="fas fa-child IconBtnFilter child"></i>
-            </div>
-            <button class="BtnFilter">
-                <p class="TxtFilter">Famillial</p>
+            <button class="filtre__bouttons">
+                <div class="filtre__bouttons__container__icon">
+                    <i class="fas fa-child filtre__bouttons__icon"></i>
+                </div>
+                <p class="filtre__bouttons__texte">Famillial</p>
             </button>
-            <div class="BtnDivIcon">
-
-                <i class="fas fa-heart IconBtnFilter"></i>
-            </div>
-            <button class="BtnFilter">
-                <p class="TxtFilter">Romantique</p>
+            <button class="filtre__bouttons">
+                <div class="filtre__bouttons__container__icon">
+                    <i class="fas fa-heart filtre__bouttons__icon"></i>
+                </div>
+                <p class="filtre__bouttons__texte">Romantique</p>
             </button>
-            <div class="BtnDivIcon">
-                <i class="fas fa-dog IconBtnFilter"></i>
-            </div>
-            <button type="button" class="BtnFilter">
-                <p class="TxtFilter">Animaux autorisés</p>
+            <button type="button" class="filtre__bouttons">
+                <div class="filtre__bouttons__container__icon">
+                    <i class="fas fa-dog filtre__bouttons__icon"></i>
+                </div>
+                <p class="filtre__bouttons__texte">Animaux autorisés</p>
             </button>
-
         </div>
     </section>
-    <section class="Hebergement">
-        <div class="HebergementsMarseille">
+
+    <!-- Informations sur le nombres de recherches -->
+    <div class="info">
+        <div class="info__container">
+            <span> &#8505;</span>
+        </div>
+        <p>Plus de 500 logements sont disponible dans cette ville</p>
+    </div>
+
+    <!-- Bloc Hebergement ou on retrouve les logements correspondant à la recherche -->
+    <section class="hebergement" id="Hebergement">
+        <div class="hebergement__container">
             <h3>Hébergements à Marseille</h3>
-            <div class="HebergementsGrid">
-                <div class="HebergementsBlock">
-                    <img src="images/hebergements/Auberge_La_Cannebiere.jpg" alt="" sizes="" srcset="">
+            <div class="hebergement__grid">
+                <div class="hebergement__item">
+                    <img src="images/hebergements/Auberge_La_Cannebiere.jpg" alt="Chambre d'hotel dans l'Auberge 'La Cannebière' ">
                     <h4>Auberge la Cannebière</h4>
                     <p>Nuit à partir de <strong>25€</strong> </p>
-                    <div class="BlockStars quatreEtoiles">
+                    <div class="BlockStars hebergement__item__etoiles quatreEtoiles">
                         <i class="fas fa-star Stars1 "></i>
                         <i class="fas fa-star Stars2 "></i>
                         <i class="fas fa-star Stars3"></i>
@@ -87,11 +115,11 @@
                         <i class="fas fa-star Stars5"></i>
                     </div>
                 </div>
-                <div class="HebergementsBlock">
+                <div class="hebergement__item">
                     <img src="images/hebergements/Hotel_du_Port.jpg" alt="" sizes="" srcset="">
                     <h4>Hôtel du port</h4>
                     <p>Nuit à partir de <strong>52€</strong> </p>
-                    <div class="BlockStars ">
+                    <div class="hebergement__item__etoiles ">
                         <i class="fas fa-star Stars1 "></i>
                         <i class="fas fa-star Stars2"></i>
                         <i class="fas fa-star Stars3"></i>
@@ -99,11 +127,11 @@
                         <i class="fas fa-star Stars5"></i>
                     </div>
                 </div>
-                <div class="HebergementsBlock">
+                <div class="hebergement__item">
                     <img src="images/hebergements/Hotel_Les_Mouettes.jpg" alt="" sizes="" srcset="">
                     <h4>Hôtel Les mouettes</h4>
                     <p>Nuit à partir de <strong>76€</strong> </p>
-                    <div class="BlockStars quatreEtoiles">
+                    <div class="hebergement__item__etoiles quatreEtoiles">
                         <i class="fas fa-star Stars1"></i>
                         <i class="fas fa-star Stars2"></i>
                         <i class="fas fa-star Stars3"></i>
@@ -111,11 +139,11 @@
                         <i class="fas fa-star Stars5"></i>
                     </div>
                 </div>
-                <div class="HebergementsBlock">
+                <div class="hebergement__item">
                     <img src="images/hebergements/Hotel_de_la_mer.jpg" alt="" sizes="" srcset="">
                     <h4>Hôtel de la mer</h4>
                     <p>Nuit à partir de <strong>46€</strong> </p>
-                    <div class="BlockStars troisEtoiles quatreEtoiles">
+                    <div class="hebergement__item__etoiles troisEtoiles quatreEtoiles">
                         <i class="fas fa-star Stars1"></i>
                         <i class="fas fa-star Stars2"></i>
                         <i class="fas fa-star Stars3"></i>
@@ -123,11 +151,11 @@
                         <i class="fas fa-star Stars5"></i>
                     </div>
                 </div>
-                <div class="HebergementsBlock">
+                <div class="hebergement__item">
                     <img src="images/hebergements/Auberge_le_Panier.jpg" alt="" sizes="" srcset="">
                     <h4>Auberge Le Panier</h4>
                     <p>Nuit à partir de <strong>23€</strong> </p>
-                    <div class="BlockStars quatreEtoiles">
+                    <div class="hebergement__item__etoiles quatreEtoiles">
                         <i class="fas fa-star Stars1"></i>
                         <i class="fas fa-star Stars2"></i>
                         <i class="fas fa-star Stars3"></i>
@@ -135,11 +163,11 @@
                         <i class="fas fa-star Stars5"></i>
                     </div>
                 </div>
-                <div class="HebergementsBlock">
+                <div class="hebergement__item">
                     <img src="images/hebergements/Hotel_chez_Amina.jpg" alt="" sizes="" srcset="">
                     <h4>Hôtel chez Amina</h4>
                     <p>Nuit à partir de <strong>96€</strong> </p>
-                    <div class="BlockStars ">
+                    <div class="hebergement__item__etoiles ">
                         <i class="fas fa-star "></i>
                         <i class="fas fa-star "></i>
                         <i class="fas fa-star "></i>
@@ -148,20 +176,22 @@
                     </div>
                 </div>
             </div>
-            <p class="More">Affichez plus</p>
+            <p class="hebergement__more">Affichez plus</p>
         </div>
-        <aside class="Populaire">
-            <div class="PopulaireTitre">
+
+        <!-- Bloc contenant les logements les plus populaires dans le secteurs sélectionné-->
+        <aside class="populaire">
+            <div class="populaire__title">
                 <h3>Les Plus Populaires</h3>
-                <i class="fas fa-chart-line Chart"></i>
+                <i class="fas fa-chart-line  populaire__title__icon"></i>
             </div>
-            <div class="PopulaireGrid">
-                <div class="PopulaireBlock">
+            <div class="populaire__grid">
+                <div class=" populaire__item">
                     <img src="images/hebergements/Hotel_le_soleil_du_matin.jpg" alt="" srcset="">
-                    <div class="PopulaireBlockDescription">
+                    <div class=" populaire__item__description">
                         <h4>Hôtel Le soleil du matin</h4>
                         <p>Nuit a partir de <strong>128€</strong></p>
-                        <div class="BlockStars BlockStarsAside">
+                        <div class=" populaire__item__etoiles">
                             <i class="fas fa-star "></i>
                             <i class="fas fa-star "></i>
                             <i class="fas fa-star "></i>
@@ -170,12 +200,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="PopulaireBlock">
+                <div class="populaire__item">
                     <img src="images/hebergements/Au_Coeur_de_leau.jpg" alt="" srcset="">
-                    <div class="PopulaireBlockDescription">
+                    <div class="populaire__item__description">
                         <h4>Au coeur de l'eau Chambre d'hôtes</h4>
                         <p>Nuit a partir de <strong>71€</strong></p>
-                        <div class="BlockStars BlockStarsAside quatreEtoiles">
+                        <div class="populaire__item__etoiles quatreEtoiles">
                             <i class="fas fa-star "></i>
                             <i class="fas fa-star "></i>
                             <i class="fas fa-star "></i>
@@ -184,12 +214,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="PopulaireBlock Last">
+                <div class="populaire__item last">
                     <img src="images/hebergements/Hotel_tout_bleu_et_blanc.jpg" alt="" srcset="">
-                    <div class="PopulaireBlockDescription">
+                    <div class="populaire__item__description">
                         <h4>Hôtel Tout bleu et Blanc</h4>
                         <p>Nuit a partir de <strong>68€</strong></p>
-                        <div class="BlockStars BlockStarsAside quatreEtoiles">
+                        <div class="populaire__item__etoiles quatreEtoiles">
                             <i class="fas fa-star "></i>
                             <i class="fas fa-star "></i>
                             <i class="fas fa-star "></i>
@@ -201,55 +231,73 @@
             </div>
         </aside>
     </section>
-    <section class="Activites">
+
+    <!--Bloc des activitées dans la zonde de recherche -->
+    <section class="activites" id="Activites">
         <h3>Activités à Marseille</h3>
-        <div class="ActivitesGrid">
-            <div class="ActivitesBlock Port">
-                    <img src="images/Activites/Vieux_Port.jpg" alt="" srcset="">
-                    <h4>Vieux Port</h4>
+        <div class=" activites__grid">
+            <div class=" activites__item port">
+                <img src="images/Activites/Vieux_Port.jpg" alt="" srcset="">
+                <h4>Vieux Port</h4>
             </div>
-            <div class="ActivitesColumn">
-                <div class="ActivitesBlock Fort">
+            <div class=" activites__column">
+                <div class="activites__item fort">
                     <img src="images/Activites/Fort_de_Pomegues.jpg" alt="" srcset="">
                     <h4>Fort de Pomègues</h4>
                 </div>
-                <div class="ActivitesBlock Ile">
+                <div class="activites__item ile">
                     <img src="images/Activites/Iles_de_Frioul.jpg" alt="" srcset="">
                     <h4>Îles de Frioul</h4>
                 </div>
             </div>
-            <div class="ActivitesBlock Parc">
+            <div class="activites__item parc">
                 <img src="images/Activites/Parc_National_des_Calanques.jpg" alt="">
                 <h4>Parc National des Calanques</h4>
             </div>
-            <div class="ActivitesColumn">
-                <div class="ActivitesBlock Dame">
+            <div class="activites__column">
+                <div class="activites__item dame">
                     <img src="images/Activites/Notre_Dame_de_la_Garde.jpg" alt="" srcset="">
                     <h4>Notre-Dame-de-la-Garde</h4>
                 </div>
-                <div class="ActivitesBlock ParcL">
+                <div class="activites__item parcL">
                     <img src="images/Activites/Parc_National_des_Calanques.jpg" alt="" srcset="">
                     <h4>Parc Longchamp</h4>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Footer-->
     <footer>
         <div>
             <h3>A propos</h3>
-            <p>Fonctionnement du site</p>
-            <p>Condition générales de vente</p>
-            <p>Données et confidentialité</p>
+            <a href="#">
+                <p>Fonctionnement du site</p>
+            </a>
+            <a href="#">
+                <p>Condition générales de vente</p>
+            </a>
+            <a href="#">
+                <p>Données et confidentialité</p>
+            </a>
         </div>
         <div>
             <h3>Nos Hebergements</h3>
-            <p>Charte qualité</p>
-            <p>Soumettre votre hôtel</p>
+            <a href="#">
+                <p>Charte qualité</p>
+            </a>
+            <a href="#">
+                <p>Soumettre votre hôtel</p>
+            </a>
         </div>
         <div>
             <h3>Assistance</h3>
-            <p>Centre d'aide</p>
-            <p>Nous contacter</p>
+            <a href="#">
+                <p>Centre d'aide</p>
+            </a>
+            <a href="#">
+                <p>Nous contacter</p>
+            </a>
         </div>
     </footer>
 </body>
