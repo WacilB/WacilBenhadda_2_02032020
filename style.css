@@ -90,6 +90,10 @@ nav li {
     margin-bottom: 20px;
 }
 
+.barreRecherche__formulaire__search{
+    display: none !important; 
+}
+
 
 /*  --------------------------------------------
     Filtres
@@ -148,7 +152,7 @@ nav li {
     font-weight: bold;
 }
 .barreRecherche__formulaire__search{
-    display: none;
+    display: none ;
 }
 
 /*  --------------------------------------------
@@ -489,6 +493,7 @@ footer div a {
     }
     nav{
         flex-wrap: wrap;
+        margin-right: 0px;
     }
     nav li {
         margin:0px;
@@ -508,10 +513,6 @@ footer div a {
         width: 100%;
         border-bottom: 2px solid #F2F2F2;
         margin-top: 20px;
-
-        
-        
-        
     }
     .menu__mobile__container a{
         text-decoration: none;
@@ -532,7 +533,7 @@ footer div a {
         padding: 0 60px 0 0;
     }
     .barreRecherche__formulaire__search{
-        display: block;
+        display: block !important;
         align-items: center;
         justify-content: center;
     }
