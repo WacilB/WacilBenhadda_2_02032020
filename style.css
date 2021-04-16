@@ -125,9 +125,7 @@ nav li {
     margin:0 30px 20px 10px ;
     
 }
-.filtre__bouttons:active{
-    background-color: aquamarine;
-}
+
 .filtre__bouttons__icon{
     color: #0065FC;
     font-size: 15px;
@@ -501,7 +499,9 @@ footer div a {
     nav img{
         margin-left: 20px;
     }
-
+    .menu__inscrire{
+        margin-right: 10px;
+    }
     .menu__container{
        display: none;
     }
@@ -511,15 +511,34 @@ footer div a {
         display: flex;
         justify-content: space-around;
         width: 100%;
+        
+    }
+    .menu__mobile__container__hebergement{
+        width: 50%;
+        text-align: center;
         border-bottom: 2px solid #F2F2F2;
         margin-top: 20px;
+    }
+    .menu__mobile__container__hebergement:hover{
+        border-bottom: 2px solid #0065FC;
+        color: #0065FC;
+    }
+    .menu__mobile__container__activites{
+        width: 50%;
+        text-align: center;
+        border-bottom: 2px solid #F2F2F2;
+        margin-top: 20px;
+    }
+    .menu__mobile__container__activites:hover{
+        border-bottom: 2px solid #0065FC;
+        color: #0065FC;
     }
     .menu__mobile__container a{
         text-decoration: none;
         color: gray;
     }
-    .menu__mobile__container a:active{
-        border-bottom: 2px solid #0065FC;
+    .menu__mobile__container li:hover{
+        
         color: #0065FC;
     }
     .menu__mobile__container li{
