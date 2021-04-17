@@ -29,7 +29,7 @@
                     <li>S'inscrire</li>
                 </a>
             </ul>
-        <!--Menu version mobile-->
+            <!--Menu version mobile-->
             <div class="menu__mobile__container">
                 <div class="menu__mobile__container__hebergement">
                     <a href="#Hebergement">
@@ -57,7 +57,7 @@
                 </div>
                 <button type="submit" class="barreRecherche__formulaire__boutton">
                     <p>Rechercher</p>
-                    <i class="fas fa-search barreRecherche__formulaire__search"></i>
+                    <i class="fas fa-search" id="barreRecherche__formulaire__search"></i>
                 </button>
             </form>
         </div>
@@ -108,79 +108,95 @@
             <h3>Hébergements à Marseille</h3>
             <div class="hebergement__grid">
                 <div class="hebergement__item">
-                    <img src="images/hebergements/Auberge_La_Cannebiere.jpg" alt="Chambre d'hotel dans l'Auberge 'La Cannebière' ">
-                    <h4>Auberge la Cannebière</h4>
-                    <p>Nuit à partir de <strong>25€</strong> </p>
-                    <div class="BlockStars hebergement__item__etoiles quatreEtoiles">
-                        <i class="fas fa-star Stars1 "></i>
-                        <i class="fas fa-star Stars2 "></i>
-                        <i class="fas fa-star Stars3"></i>
-                        <i class="fas fa-star Stars4"></i>
-                        <i class="fas fa-star Stars5"></i>
+                    <img src="images/hebergements/Auberge_la_Cannebiere.jpg"
+                        alt="Chambre d'hotel dans l'Auberge 'La Cannebière'">
+                    <div class="hebergement__item__text">
+                        <h4>Auberge la Cannebière</h4>
+                        <p>Nuit à partir de <strong>25€</strong> </p>
+                        <div class="BlockStars hebergement__item__etoiles quatreEtoiles">
+                            <i class="fas fa-star Stars1 "></i>
+                            <i class="fas fa-star Stars2 "></i>
+                            <i class="fas fa-star Stars3"></i>
+                            <i class="fas fa-star Stars4"></i>
+                            <i class="fas fa-star Stars5"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="hebergement__item">
+                    <img src="images/hebergements/Hotel_du_port.jpg" alt="Chambre d'hotel dans l'hotel du Port">
+                    <div class="hebergement__item__text">
+                        <h4>Hôtel du port</h4>
+                        <p>Nuit à partir de <strong>52€</strong> </p>
+                        <div class="hebergement__item__etoiles ">
+                            <i class="fas fa-star Stars1 "></i>
+                            <i class="fas fa-star Stars2"></i>
+                            <i class="fas fa-star Stars3"></i>
+                            <i class="fas fa-star Stars4"></i>
+                            <i class="fas fa-star Stars5"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="hebergement__item">
-                    <img src="images/hebergements/Hotel_du_Port.jpg" alt="" sizes="" srcset="">
-                    <h4>Hôtel du port</h4>
-                    <p>Nuit à partir de <strong>52€</strong> </p>
-                    <div class="hebergement__item__etoiles ">
-                        <i class="fas fa-star Stars1 "></i>
-                        <i class="fas fa-star Stars2"></i>
-                        <i class="fas fa-star Stars3"></i>
-                        <i class="fas fa-star Stars4"></i>
-                        <i class="fas fa-star Stars5"></i>
+                    <img src="images/hebergements/Hotel_Les_Mouettes.jpg"
+                        alt="Chambre d'hotel dans l'hôtel 'Les Mouettes'">
+                    <div class="hebergement__item__text">
+                        <h4>Hôtel Les mouettes</h4>
+                        <p>Nuit à partir de <strong>76€</strong> </p>
+                        <div class="hebergement__item__etoiles quatreEtoiles">
+                            <i class="fas fa-star Stars1"></i>
+                            <i class="fas fa-star Stars2"></i>
+                            <i class="fas fa-star Stars3"></i>
+                            <i class="fas fa-star Stars4"></i>
+                            <i class="fas fa-star Stars5"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="hebergement__item">
-                    <img src="images/hebergements/Hotel_Les_Mouettes.jpg" alt="" sizes="" srcset="">
-                    <h4>Hôtel Les mouettes</h4>
-                    <p>Nuit à partir de <strong>76€</strong> </p>
-                    <div class="hebergement__item__etoiles quatreEtoiles">
-                        <i class="fas fa-star Stars1"></i>
-                        <i class="fas fa-star Stars2"></i>
-                        <i class="fas fa-star Stars3"></i>
-                        <i class="fas fa-star Stars4"></i>
-                        <i class="fas fa-star Stars5"></i>
+                    <img src="images/hebergements/Hotel_de_la_mer.jpg" alt="Chambre d'hotel dans l'hôtel de la mer">
+                    <div class="hebergement__item__text">
+                        <h4>Hôtel de la mer</h4>
+                        <p>Nuit à partir de <strong>46€</strong> </p>
+                        <div class="hebergement__item__etoiles troisEtoiles quatreEtoiles">
+                            <i class="fas fa-star Stars1"></i>
+                            <i class="fas fa-star Stars2"></i>
+                            <i class="fas fa-star Stars3"></i>
+                            <i class="fas fa-star Stars4"></i>
+                            <i class="fas fa-star Stars5"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="hebergement__item">
-                    <img src="images/hebergements/Hotel_de_la_mer.jpg" alt="" sizes="" srcset="">
-                    <h4>Hôtel de la mer</h4>
-                    <p>Nuit à partir de <strong>46€</strong> </p>
-                    <div class="hebergement__item__etoiles troisEtoiles quatreEtoiles">
-                        <i class="fas fa-star Stars1"></i>
-                        <i class="fas fa-star Stars2"></i>
-                        <i class="fas fa-star Stars3"></i>
-                        <i class="fas fa-star Stars4"></i>
-                        <i class="fas fa-star Stars5"></i>
+                    <img src="images/hebergements/Auberge_le_Panier.jpg"
+                        alt="Chambre d'hotel dans l'Auberge 'Le Panier'">
+                    <div class="hebergement__item__text">
+                        <h4>Auberge Le Panier</h4>
+                        <p>Nuit à partir de <strong>23€</strong> </p>
+                        <div class="hebergement__item__etoiles quatreEtoiles">
+                            <i class="fas fa-star Stars1"></i>
+                            <i class="fas fa-star Stars2"></i>
+                            <i class="fas fa-star Stars3"></i>
+                            <i class="fas fa-star Stars4"></i>
+                            <i class="fas fa-star Stars5"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="hebergement__item">
-                    <img src="images/hebergements/Auberge_le_Panier.jpg" alt="" sizes="" srcset="">
-                    <h4>Auberge Le Panier</h4>
-                    <p>Nuit à partir de <strong>23€</strong> </p>
-                    <div class="hebergement__item__etoiles quatreEtoiles">
-                        <i class="fas fa-star Stars1"></i>
-                        <i class="fas fa-star Stars2"></i>
-                        <i class="fas fa-star Stars3"></i>
-                        <i class="fas fa-star Stars4"></i>
-                        <i class="fas fa-star Stars5"></i>
-                    </div>
-                </div>
-                <div class="hebergement__item">
-                    <img src="images/hebergements/Hotel_chez_Amina.jpg" alt="" sizes="" srcset="">
-                    <h4>Hôtel chez Amina</h4>
-                    <p>Nuit à partir de <strong>96€</strong> </p>
-                    <div class="hebergement__item__etoiles ">
-                        <i class="fas fa-star "></i>
-                        <i class="fas fa-star "></i>
-                        <i class="fas fa-star "></i>
-                        <i class="fas fa-star Stars4"></i>
-                        <i class="fas fa-star Stars5"></i>
+                    <img src="images/hebergements/Hotel_chez_Amina.jpg" alt="Chambre d'hotel dans l'hôtel 'Chez Amina'">
+                    <div class="hebergement__item__text">
+                        <h4>Hôtel chez Amina</h4>
+                        <p>Nuit à partir de <strong>96€</strong> </p>
+                        <div class="hebergement__item__etoiles ">
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star "></i>
+                            <i class="fas fa-star Stars4"></i>
+                            <i class="fas fa-star Stars5"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-            <p class="hebergement__more">Affichez plus</p>
+            <p class="hebergement__more">Afficher plus</p>
         </div>
 
         <!-- Bloc contenant les logements les plus populaires dans le secteurs sélectionné-->

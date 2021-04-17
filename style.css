@@ -1,3 +1,43 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   Reset 
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+
+
+
 /* New font : Raleway */
 @font-face{
     font-family: "Raleway, bold";
@@ -12,14 +52,13 @@
 body{
     margin: 0px;
 }
-
+ 
 header{
     margin: 0 50px;
     
 }
 
 nav{
-    margin-right: 10px;
     display: flex;
     justify-content: space-between;
 
@@ -44,9 +83,18 @@ nav ul a:hover{
 
 nav li {
     margin: 50px;
-    color: #0065FC;
+    color: gray;
+    font-weight: 400;
 }
-
+.menu__container a li:hover{
+    color: #0065FC;
+    font-weight: 400;
+}
+.menu__inscrire li { 
+    margin-right: 25px;
+    color: #0065FC;
+    font-weight: 500;
+}
 /*  --------------------------------------------
     Barre de recherche
     --------------------------------------------
@@ -55,6 +103,16 @@ nav li {
 
 .barreRecherche{
     margin: 0 50px;
+}
+.barreRecherche h1{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.barreRecherche p {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 20px;
 }
 .barreRecherche__formulaire__container {
     display: flex;
@@ -81,6 +139,11 @@ nav li {
     font-size: 15px;
     font-weight: 400;
 }
+.barreRecherche__formulaire__boutton p{
+    color: white;
+    margin-bottom: 0;
+    padding: 12px 0;
+}
 
 #barreRecherche__formulaire{
     display: flex;
@@ -90,8 +153,8 @@ nav li {
     margin-bottom: 20px;
 }
 
-.barreRecherche__formulaire__search{
-    display: none !important; 
+#barreRecherche__formulaire__search{
+    display: none; 
 }
 
 
@@ -103,8 +166,12 @@ nav li {
 
 .filtre{
     display: flex;
-    margin : 50px 50px;
-    
+    margin : 30px 50px;   
+}
+.filtre p {
+    align-self: center;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 .filtre__container__bouttons{
     align-self: center;
@@ -117,7 +184,7 @@ nav li {
     padding: 0px;
     display: flex;
     background-color: white;
-    border: 1px #F2F2F2 solid ;
+    border: 3px #F2F2F2 solid ;
     border-left-width: 0px;
     border-radius: 30px;
     justify-content: flex-start;
@@ -136,30 +203,30 @@ nav li {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 40px;
     border: solid 1px #DEEBFF;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: #DEEBFF;
-    width: 50px;
-    
+    width: 40px;
 }
-
+.filtre__bouttons p{
+    margin-bottom: 0;
+}
 .filtre__bouttons__texte{
-    padding-left: 3vw;
-    padding-right: 3vw;
+    padding-left: 0.5vw;
+    padding-right: 1vw;
+    font-size: 0.9rem;
     font-weight: bold;
 }
-.barreRecherche__formulaire__search{
-    display: none ;
-}
+
 
 /*  --------------------------------------------
-    Bulles d'informations
+    Bulle d'informations
     --------------------------------------------
 */
 
 .info{
-    margin: 50px;
+    margin: 0px 50px;
     display: flex;
     align-items: center;
     color: gray;
@@ -198,8 +265,9 @@ nav li {
     
 }
 .hebergement__container h3 {
-    
-    font-size: 22px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 .hebergement__grid{
     display: flex;
@@ -210,37 +278,43 @@ nav li {
 }
 .hebergement__item{
     width: 250px;
-    height: 190px;
+    height: 200px;
     background-color: white;
-    padding: 2px;
+    padding: 4px;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
     margin-bottom: 56px;
+    box-shadow: 1px 1px 1px 1px #e7e6e6;
 }
 .hebergement__item:hover{
     transform: scale(1.1);
 }
 
 .hebergement__item img {
-    width: 240px;
+    width: 250px;
     margin: 0px;
     height: 115px;
     align-self: center;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
+.hebergement__item__text{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+}
 .hebergement__item h4{
-    margin: 5px 5px;
     font-weight: bold;
+    font-size: 1rem;
 }
 .hebergement__item p{
-    margin: 3px 5px;
+    margin: 10px 0;
+    font-size: 0.9rem;
+    font-weight: 300;
 }
 
-.hebergement__item__etoiles{
-    margin: 0px 5px;
-}
 .hebergement__item__etoiles .fa-star{
     color: #0065FC;
     font-size: 12px;
@@ -253,7 +327,8 @@ nav li {
 }
 .hebergement__more{
     margin: 0;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 /*  --------------------------------------------
@@ -273,10 +348,12 @@ nav li {
 .populaire__title{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 21px;
     margin-left: 5px;
 }
 .populaire__title h3{
-    font-size: 22px;
+    font-size: 1.2rem;
+    font-weight: 600;
     
 }
 .populaire__title__icon{
@@ -291,18 +368,20 @@ nav li {
 }
 .populaire__item{
     width:340px;
+    height: 140px;
     background-color: white;
-    padding: 5px;
+    padding: 4px;
     display: flex;
     border-radius: 15px;
     margin-bottom: 45px;
+    box-shadow: 1px 1px 1px 1px #e7e6e6;
 }
 .populaire__item:hover{
     transform: scale(1.1);
 }
 .populaire__item img{
     width: 130px;
-    height: 135px;
+    height: 140px;
     margin: 0;
     min-width: 130px;
     justify-content: center;
@@ -310,23 +389,28 @@ nav li {
     object-fit: cover;
 }
 .populaire__item__description{
-    margin: 5px 25px 5px 15px;
+    margin: 5px 20px 5px 15px;
     flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 .populaire__item h4{
     margin: 0;
     font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.3em;
 }
+
 .last{
     margin-bottom: 0;
 }
 .populaire__item__description p {
    margin: 0;
-    margin-top: 5px;
+   margin-top: -25px; 
 }
-.populaire__item__etoiles{
-    margin: 50px 25px 0 0;
-}
+
 .populaire__item__etoiles .fa-star{
     color: #0065FC;
     font-size: 12px;
@@ -343,10 +427,15 @@ nav li {
 .activites{
     margin: 50px 50px;
 }
+.activites h3 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
 .activites__grid{
     display: flex;
-    justify-content: space-around;
-    align-content: space-around;
+    justify-content: space-between;
+   
     flex-wrap: wrap;
 }
 .activites__item{
@@ -361,6 +450,7 @@ nav li {
 .activites__item h4{
     margin-left: 15px;
     font-weight: 600;
+    padding: 15px 0;
 }
 .activites__column{
     display: flex;
@@ -418,14 +508,23 @@ footer{
     justify-content: flex-start;
     
 }
-
+footer h3 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
 footer div{
     margin-right: 20%;
 }
 
+footer p {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
 footer div a {
     text-decoration: none;
-    color: black;
+    
+    color: grey;
 }
 
 /*  --------------------------------------------
@@ -482,11 +581,7 @@ footer div a {
 */
 
 @media (max-width:425px){
-    body{
-        width: 100%;
-    }
     header{
-        width: 100%;
        margin: 0px; 
     }
     nav{
@@ -546,13 +641,11 @@ footer div a {
     }
     .barreRecherche{
         margin: 20px 20px;
-        width: 100%;
+       
     }
-    .barreRecherche h1{
-        padding: 0 60px 0 0;
-    }
-    .barreRecherche__formulaire__search{
-        display: block !important;
+    
+    #barreRecherche__formulaire__search{
+        display: block ;
         align-items: center;
         justify-content: center;
     }
@@ -567,8 +660,8 @@ footer div a {
         margin:5px
     }
     .barreRecherche__formulaire__boutton{
-        padding: 0px;
-        position: absolute;
+        padding: 20px;
+       
         justify-self: center;
         align-items: center;
         height: 50px;
@@ -619,6 +712,7 @@ footer div a {
     }
     .populaire{
         background-color: #F2F2F2;
+        border-radius: 0;
         width: 100%;
         padding: 10px 0px;
         margin: 0px 0px 20px 0px;
