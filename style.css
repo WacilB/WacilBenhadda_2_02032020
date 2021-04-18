@@ -213,7 +213,7 @@ nav li {
     margin-bottom: 0;
 }
 .filtre__bouttons__texte{
-    padding-left: 0.5vw;
+    padding-left: 1vw;
     padding-right: 1vw;
     font-size: 0.9rem;
     font-weight: bold;
@@ -535,17 +535,23 @@ footer div a {
 @media (max-width:768px){
     .hebergement{
         flex-direction: column-reverse;
-        margin: 20px;
+        width: 100%;
+        margin: 0px;
+
     }
     .hebergement__container{
         padding: 20px 0px;
-        width: 100%;
+        border-radius: 0;
         margin: 0px;
         text-align: center;
     }
+    .hebergement__container h3{
+        text-align: left;
+        margin: 30px 60px;
+    }
     .hebergement__grid{
         justify-content: space-around;
-        width: 100%;
+        
     
     }
     .populaire{
@@ -553,21 +559,30 @@ footer div a {
         margin-top: 20px;
         background-color: white;
         padding: 0px;
+        
+    }
+    .populaire__title{
+        margin: 20px 50px;
     }
     .populaire__grid{
         align-items: center;
         text-align: center;
+        margin-bottom: 50px;
     }
     .populaire__item{
      flex-direction: column;
+     height: 300px;
     }
     .populaire__item img{
        width: 100% ;
-       height:250px;
+       height:220px;
        border-radius: 15px;
     }
     .populaire__item__description{
         margin: 10px;
+    }
+    .populaire__item__description p{
+        margin-top: 10px;
     }
     .populaire__item__etoiles{
        margin: 10px 0px;
@@ -593,15 +608,17 @@ footer div a {
     }
     nav img{
         margin-left: 20px;
+        margin-top: 20px;
     }
     .menu__inscrire{
-        margin-right: 10px;
+        margin-right: 0px;
+        margin-top: 40px;
     }
     .menu__container{
        display: none;
     }
     .menu__mobile__container{
-        
+        margin: 20px 0;
         list-style: none;
         display: flex;
         justify-content: space-around;
@@ -612,6 +629,7 @@ footer div a {
         width: 50%;
         text-align: center;
         border-bottom: 2px solid #F2F2F2;
+        padding-bottom: 10px;
         margin-top: 20px;
     }
     .menu__mobile__container__hebergement:hover{
@@ -643,38 +661,63 @@ footer div a {
         margin: 20px 20px;
        
     }
-    
+    .barreRecherche h1{
+        margin-right: 20px;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+    .barreRecherche__formulaire__container{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .barreRecherche__formulaire__input{
+        width: 70%;
+    }
     #barreRecherche__formulaire__search{
-        display: block ;
-        align-items: center;
+        display: flex ;
         justify-content: center;
+    }
+    .barreRecherche__formulaire__boutton{
+        position: absolute;
+        right: 25px;
+        height: 50px;
+        width: 50px;
+        border-radius: 15px;
+        
+    }
+    
+    .barreRecherche__formulaire__boutton p{
+        display: none;
     }
     .filtre{
         flex-direction: column;
         margin: 20px;
     }
+    .filtre p {
+        align-self: unset;
+    }
     .filtre__container__bouttons{
         margin-left: 0px;
     }
     .filtre__bouttons{
-        margin:5px
+        margin:5px 20px 5px 0px;
     }
-    .barreRecherche__formulaire__boutton{
-        padding: 20px;
-       
-        justify-self: center;
-        align-items: center;
-        height: 50px;
-        width: 50px;
-        border-radius: 15px;
-        right: 50px;
-        
+    .filtre__bouttons__texte{
+        padding-left: 3vw;
+        padding-right: 3vw;
     }
-    .barreRecherche__formulaire__boutton p{
-        display: none;
-    }
+
     .info{
         margin: 20px;
+    }
+    .info p {
+        margin-top: 5px;
+    }
+    .info__container{
+        padding: 5px;
+        height: 10px;
+        width: 10px;
+        align-self: flex-start;
     }
     .hebergement{
         margin: 0px;
@@ -691,7 +734,7 @@ footer div a {
     .hebergement__item{
         width: 90%;
         border: #F2F2F2 solid 2px;
-        box-shadow: 5px 3px 5px 5px #F2F2F2;
+        box-shadow: 1px 1px 1px 1px #e7e6e6;
         border-radius: 15px;
         padding: 5px;
         text-align: left;
@@ -715,23 +758,37 @@ footer div a {
         border-radius: 0;
         width: 100%;
         padding: 10px 0px;
-        margin: 0px 0px 20px 0px;
+        margin:  20px 0px;
     }
     .populaire__title__icon{
-        margin-right: 30px;
+        margin-right: 0px;
     }
     .populaire__title{
-        margin-left: 20px;
+        margin: 10px 10px  10px 20px;
+        justify-content: space-between;
     }
     .populaire__item{
         flex-direction: row;
         width: 90%;
-        height: 95px;
+        height: 135px;
+        text-align: left;
+        
     }
     .populaire__item img {
-        height: 90px;
+        height: 135px;
         width : 130px;
         border-radius: 15px 0 0 15px;
+    }
+    .populaire__item__description{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: 10px;
+    }
+    .populaire__item__description p {
+        margin-top: -5px;
+    }
+    .populaire__item__etoiles{
+        margin: 0;
     }
     .activites{
         margin: 20px;
@@ -746,5 +803,7 @@ footer div a {
 
     footer{
         flex-direction: column;
+        padding: 25px;
     }
+    
 }
